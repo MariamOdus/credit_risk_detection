@@ -1,15 +1,10 @@
-# Advanced Programming — Data Visualisation (Assessment)
-
 ## Project overview
 
 This repository contains work for the Advanced Programming - Data Visualisation assessment. The main focus is exploratory data analysis and modelling on a credit risk dataset, with results and visualisations captured in Jupyter notebooks.
 
 Contents
-- `assessment.ipynb` — primary assessment notebook (root)
+- `ml.ipynb` — primary notebook (root)
 - `data/credit_risk_dataset.csv` — dataset used throughout the notebooks
-- `misc/` — supplementary notebooks and materials
-  - `homeworkOne.ipynb`, `lectureOne.ipynb`, `lectureTwo.ipynb`, `lectureThree.ipynb`, `nlpPractise.ipynb`
-  - `submission/assessment.ipynb` (duplicate of assessment for submission)
 
 ## Dataset
 
@@ -17,14 +12,12 @@ The dataset `data/credit_risk_dataset.csv` contains borrower information and lab
 
 Key dataset notes:
 - Typical columns: demographic features, financial features, and a target risk label.
-- Missing values and categorical encodings are handled inside the notebooks prior to modelling.
+- Missing values and categorical encodings are handled inside the notebooks before modelling.
 
 ## Notebooks and what they contain
 
-- `assessment.ipynb` (root): The main assignment notebook. Includes data loading, cleaning, EDA, feature engineering, model training (classification), evaluation (confusion matrix, ROC/AUC), and interpretable visualisations.
-- `misc/homeworkOne.ipynb`: Early homework exercises and practice visualisations.
-- `misc/lectureOne.ipynb`, `misc/lectureTwo.ipynb`, `misc/lectureThree.ipynb`: Lecture notebooks used as references and demonstrations of plotting and analysis techniques.
-- `misc/nlpPractise.ipynb`: Separate practice notebook for NLP techniques (not directly used in the assessment analyses).
+- `ml.ipynb` (root): The main assignment notebook. Includes data loading, cleaning, EDA, feature engineering, model training (classification), evaluation (confusion matrix, ROC/AUC), and interpretable visualisations.
+
 - `misc/submission/assessment.ipynb` and its `data/` copy: packaged submission copy of the main assessment.
 
 ## Main steps performed (high level)
@@ -33,7 +26,7 @@ Key dataset notes:
 2. Data cleaning — handle missing values, outliers, and inconsistent categories.
 3. Exploratory data analysis — distribution plots, correlation heatmaps, and insights into predictive features.
 4. Feature engineering — encoding categorical variables, scaling numeric features, and creating interaction features where helpful.
-5. Modelling experiments — baseline classifiers (e.g., logistic regression), tree-based models, evaluation and comparison.
+5. Modelling experiments — baseline classifiers (e.g., logistic regression), tree-based models, evaluation, and comparison.
 6. Visualisation & interpretation — performance plots, feature importances, and diagnostic visuals.
 
 ## Key findings (summary)
@@ -63,7 +56,7 @@ jupyter lab
 jupyter notebook
 ```
 
-Then open `assessment.ipynb` in the browser and run cells sequentially. If you prefer a headless run (to re-run all cells and export results):
+Then open `ml.ipynb` in the browser and run cells sequentially. If you prefer a headless run (to re-run all cells and export results):
 
 ```bash
 pip install nbconvert
